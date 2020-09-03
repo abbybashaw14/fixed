@@ -1,0 +1,114 @@
+/*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
+body {
+  color: #444;
+  background-color: #C9D0CB;
+  font-size: 16px;
+  font-family: 'Gentium Book Basic', serif;
+}
+img {
+width: 100%;
+}
+p {
+  margin-bottom: .67em;
+}
+nav, footer {
+  background-color: #D46B44;
+}
+footer {
+  text-align: center;
+  padding: 1em 0 .3em 0;
+  color: #F3F2F1;
+}
+/*-- Main Menu Styles--*/
+nav ul {
+  list-style: none;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+nav a:link, nav a:visited {
+  color: #F3F2F1;
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  color: #F0F0F0;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #F0F0F0;
+}
+/*-- Hero Unit Styles--*/
+header {
+  width: 510px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+header h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center
+}
+.small {
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-family: 'lato', sans-serif;
+  font-weight: 900;
+  font-size: 60%;
+}
+/*-- Article Styles--*/
+article {
+  width: 768px;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-left: auto;
+  margin-right: auto;
+}
+article figure {
+  width: 39%;
+  margin: 0 0 1.25em 1.25em;
+  float: right
+}
+article figcaption {
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+.pagination {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 96%;
+  margin:2em auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+a.button {
+  border: 1px solid #888;
+  padding: .4em 1em .4em 1em;
+  text-decoration: none;
+  color: #908480;
+  border-radius: 200px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+}
+a.button:hover, a.button:active {
+  border: 1px solid #444;
+  text-decoration: none;
+  color: #4D555C;
+}
+.dropcap{
+font-size: 50px;
+float:left;
+line-height: .75;
+}
+/*-- changes header and article width on small screens --*/
+@media screen and (max-width: 768px) {
+  header {width: 96%;}
+  article {width: 96%;}
+}
